@@ -29,21 +29,41 @@ main {
     width: 80vw;
     height: 85vh;
     margin-top: calc(2vw + 2vh);
+    margin-bottom: calc(2vw + 2vh);
 
+    p {
+        font-size: calc(1.5vw + 1.5vh);
+        font-style: italic;
+        opacity: 75%;
+    }
 
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: calc(1vw + 1vh);
 
         &:nth-of-type(1) {
             background-color: rgb(125, 163, 125);
             border-top-left-radius: 5rem;
             border-top-right-radius: 5rem;
-            padding: calc(1vw + 1vh);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow-y: auto;
-            height: 80%;
+            height: 65%;
             width: 100%;      
+        }
+
+        &:nth-of-type(2) {
+            background-color: rgb(105, 137, 105);
+            height: 10%;
+            width: 100%;
+            border-bottom-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

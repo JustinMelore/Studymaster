@@ -62,8 +62,19 @@ main {
             border-bottom-left-radius: 5rem;
             border-bottom-right-radius: 5rem;
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
             align-items: center;
+
+            button {
+                cursor: pointer;
+                background-color: transparent;
+                color: white;
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
         }
     }
 }

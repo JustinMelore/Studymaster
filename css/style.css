@@ -56,8 +56,17 @@ main section:nth-of-type(2) {
   border-bottom-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+}
+main section:nth-of-type(2) button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+main section:nth-of-type(2) button:active {
+  transform: scale(0.95);
 }
 
 footer {

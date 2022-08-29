@@ -91,9 +91,11 @@ main section:nth-of-type(2) button:active {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 33%;
   border-bottom: 2px solid green;
   padding: calc(2vw + 2vh);
+}
+#newSetPage .subSection:nth-of-type(1) {
+  height: 25%;
 }
 #newSetPage .subSection:nth-of-type(1) input {
   background-color: black;
@@ -115,22 +117,25 @@ main section:nth-of-type(2) button:active {
 #newSetPage .subSection:nth-of-type(2) {
   flex-direction: column;
   align-items: center;
+  height: 50%;
 }
 #newSetPage .subSection:nth-of-type(2) ul {
   list-style: none;
-  width: 80%;
+  width: 90%;
   height: 80%;
-  background-color: gray;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 #newSetPage .subSection:nth-of-type(2) ul .item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: red;
-  height: 75%;
+  background-color: rgb(219, 216, 216);
+  border-radius: 5rem;
+  box-shadow: inset 0px 0px 10px gray;
+  height: 50%;
   column-gap: calc(1vw + 1vh);
+  margin-bottom: calc(1vw + 1vh);
 }
 #newSetPage .subSection:nth-of-type(2) ul .item div {
   width: 100%;
@@ -145,6 +150,9 @@ main section:nth-of-type(2) button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#newSetPage .subSection:nth-of-type(3) {
+  height: 25%;
 }
 
 footer {

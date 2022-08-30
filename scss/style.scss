@@ -133,6 +133,19 @@ main {
             flex-direction: column;
             align-items: center;
             height: 50%;
+
+            #addItem {
+                width: 25%;
+                height: 25%;
+                font-size: calc(2vw + 2vh);
+                background-color: lightgreen;
+                border-radius: 5rem;
+                cursor: pointer;
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
             ul {
                 list-style: none;
                 width: 90%;
@@ -152,20 +165,22 @@ main {
                     column-gap: calc(1vw + 1vh);
                     margin-bottom: calc(1vw + 1vh);
 
+                    .saveItem, input {display: none;}
+
                     div {
                         width: 100%;
                         display: flex;
                         height: 50%;
                         justify-content: space-evenly;
 
-                        p {
+                        .answer, .answerInput {
                             width: 20%;
                             background-color: white;
                             border-radius: 5rem;
-                            display: flex;
                             justify-content: center;
                             align-items: center;
                         }
+                        .answer{display: flex;}
                     }
                 }                
             }
